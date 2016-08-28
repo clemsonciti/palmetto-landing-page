@@ -10,6 +10,4 @@ navigation:
     - text: "JupyterHub"
       url: https://www.palmetto.clemson.edu/jupyterhub
 - text: "Contact"
-  dropdown:
-    - text: "CITI"
-      url: http://citi.clemson.edu
+  url: contact.html
