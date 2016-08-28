@@ -26,3 +26,10 @@ Cypress allows users to process very large datasets and analyze streaming data.
 interactive computing environment
 powered by the Palmetto Cluster.
 Documentation for JupyterHub can be found [here](https://www.palmetto.clemson.edu/jupyterhub/docs).
+
+### XDMod
+
+[XDMod](https://www.palmetto.clemson.edu/xdmod) is a
+tool for monitoring and tuning jobs on the Palmetto cluster.
+XDMod is currently in "experimental" stage,
+but users are free to explore features and report problems.
