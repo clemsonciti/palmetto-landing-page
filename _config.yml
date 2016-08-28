@@ -1,6 +1,6 @@
 # Jekyll configuration file
-name: Advanced Computing at Clemson University
-url: https://www.palmetto.clemson.edu/
+name: Clemson University Palmetto Cluster
+url: https://www.palmetto.clemson.edu/git-test
 markdown: rdiscount
 highlighter: pygments
 include: ['.htaccess']
