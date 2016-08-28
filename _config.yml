@@ -1,0 +1,8 @@
+# Jekyll configuration file
+name: Clemson University Palmetto Cluster
+url: https://www.palmetto.clemson.edu/git-test
+markdown: rdiscount
+highlighter: pygments
+include: ['.htaccess']
+exclude: ['README.md','deploy.sh','build.sh','Makefile','deploy.webapp01.sh','Makefile.webapp01', '*.git']
+baseurl: '/palmetto'

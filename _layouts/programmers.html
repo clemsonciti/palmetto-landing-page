@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include header.html %}
+
+  <body>
+
+    <div id="wrap">
+    <div id="main">
+
+    {% include navbar.html %}
+
+    <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content">
+      <div class="container">
+
+        <h1>Palmetto Programmer's Guide</h1>
+
+      </div>
+    </div>
+
+
+<div class="container bs-docs-container">
+
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="bs-docs-sidebar hidden-print" role="complementary">
+
+        <ul class="nav bs-docs-sidenav">
+          
+          {% for section in site.data.programmers.navigation %}
+          <li>
+          <a href="#{{section.id}}">{{section.navTitle}}</a>
+          </li>
+          {% endfor %}
+
+        </ul>
+
+        <a class="back-to-top" href="#top">Back to top</a>
+
+      </div><!-- bs-docs-sidebar --> 
+
+    </div><!-- col-md-3 -->
+
+
+    <div class="col-md-9" role="main">
+
+        {{ content }}
+
+    </div><!-- col-md-9 -->
+
+
+      </div><!-- row -->
+
+    </div><!-- container -->
+
+  </div><!-- main -->
+  </div><!-- wrap -->
+
+  {% include footer.html %}
+  {% include js.html %}
+
+  </body>
+</html>

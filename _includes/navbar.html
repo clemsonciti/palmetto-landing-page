@@ -1,0 +1,43 @@
+<a class="sr-only" href="#content">Skip to main content</a>
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+
+        {% for section in site.data.navbar.navigation %}
+        
+        {% if section.dropdown %}
+        <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">{{section.text}}
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+              {% for subsection in section.dropdown %}
+              <li><a href="{{subsection.url}}">{{subsection.text}}</a></li>
+              {% endfor %}
+			</ul>
+        </li>
+        {% else %}
+        <li{% if page.url == section.url %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}{{ section.url }}">{{section.text}}</a>
+        </li>
+        {% endif %}
+
+        {% endfor %}
+
+
+      </ul>
+
+    </nav>
+  </div>
+</header>    
+

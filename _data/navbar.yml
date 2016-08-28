@@ -1,0 +1,15 @@
+navigation:
+- text: "Home"
+  url: /index.html
+- text: "Resources"
+  dropdown:
+    - text: "Palmetto Cluster"
+      url: https://www.palmetto.clemson.edu/palmetto
+    - text: "Cypress Cluster"
+      url: https://www.palmetto.clemson.edu/cypress
+    - text: "JupyterHub"
+      url: https://www.palmetto.clemson.edu/jupyterhub
+- text: "Contact"
+  dropdown:
+    - text: "CITI"
+      url: http://citi.clemson.edu

@@ -1,0 +1,36 @@
+/* Footer
+-------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+
+html, body {height: 100%;}
+
+#footer {
+   position: relative;
+   left: 0px;
+   bottom: 0px;
+   height: 150px;
+	 margin-top: -150px; /* negative value of footer height */
+   padding: 10px 0px 10px 0px;
+   border-top: 2px solid #f19966;
+   background: #ea6a20;
+   text-align: center;
+   
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 10pt;
+   color: white;
+
+   clear: both;
+}
+
+#footer a {
+  color: #F9E498;  
+}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+
+
